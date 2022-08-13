@@ -23,7 +23,7 @@ PHP
 ### Usage
 1. Turn on the local server
    ```
-   php artisan server
+   php artisan serve
    ```
 2. visit the url on browser 
    - http://127.0.0.1:8000/shopee/product/{page}
