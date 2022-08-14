@@ -15,6 +15,10 @@ class ShopeeProductResult
     public function filterNameAndPrice($product_object)
     {
         $item_array = array();
+
+        if($product_object->total_count == null){
+            return $item_array;
+        }
         
         // 將需要的資料(商品名及價格)包在同一個物件並存進陣列
         foreach($product_object->items as $product){
