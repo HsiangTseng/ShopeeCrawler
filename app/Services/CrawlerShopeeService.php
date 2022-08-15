@@ -42,7 +42,7 @@ class CrawlerShopeeService
         }catch(Exception $e){
             Log::error(' ===== CrawlerShopeeService Search Error =====');
             Log::error($e);
-            return 'error';
+            return 'ERROR';
         }
     }
 }

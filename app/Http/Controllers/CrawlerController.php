@@ -24,6 +24,9 @@ class CrawlerController extends RestController
         try{
             // 透過API取得該頁的所有商品資料(作業用11041645)
             $data = $this->service->search(11041645, 100, $page);
+            if($data === 'ERROR'){
+                return $this->failure('E0002', '取得商品資料時錯誤');
+            }
 
             // 過濾資料，整理商品名稱、價格
             $result = $this->result->filterNameAndPrice($data);
