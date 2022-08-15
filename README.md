@@ -28,4 +28,4 @@ PHP
 2. visit the url on browser 
    - http://127.0.0.1:8000/shopee/product/{page}
    - Example: http://127.0.0.1:8000/shopee/product/1
-   - or visit the page which I employed on heroku https://big-go-shopee-crawler.herokuapp.com/shopee/product/1
+   - or visit the page which I deployed on heroku https://big-go-shopee-crawler.herokuapp.com/shopee/product/1
